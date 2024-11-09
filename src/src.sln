@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailsBlazor", "TailsBlazor\TailsBlazor.csproj", "{22C02CC9-7115-45B0-83E0-0906969FDFB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailsBlazor.Demo", "TailsBlazor.Demo\TailsBlazor.Demo.csproj", "{CFAAEB3A-2319-4873-ACAA-D69DDCA8678F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22C02CC9-7115-45B0-83E0-0906969FDFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C02CC9-7115-45B0-83E0-0906969FDFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C02CC9-7115-45B0-83E0-0906969FDFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C02CC9-7115-45B0-83E0-0906969FDFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFAAEB3A-2319-4873-ACAA-D69DDCA8678F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFAAEB3A-2319-4873-ACAA-D69DDCA8678F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFAAEB3A-2319-4873-ACAA-D69DDCA8678F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFAAEB3A-2319-4873-ACAA-D69DDCA8678F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
