@@ -396,3 +396,15 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# .NET Core-specific
+bin/
+obj/
+
+# Rider-specific
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dictionary.txt
+.idea/**/shelf/
+.idea_modules/
