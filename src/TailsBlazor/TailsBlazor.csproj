@@ -5,8 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
-
-
+    
     <ItemGroup>
         <SupportedPlatform Include="browser"/>
     </ItemGroup>
@@ -16,11 +15,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Base\" />
-      <Folder Include="Colors\" />
-      <Folder Include="Components\" />
       <Folder Include="Icons\" />
       <Folder Include="Interop\" />
+      <Folder Include="Theme\" />
       <Folder Include="wwwroot\" />
     </ItemGroup>
 
