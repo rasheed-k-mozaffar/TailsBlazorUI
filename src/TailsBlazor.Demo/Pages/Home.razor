@@ -2,8 +2,18 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+<div class="flex items-center gap-x-5">
+    <TailsButton Color="@Colors.Secondary" Variation="Variation.Outlined"
+        OnFocus='() => Console.WriteLine("We focused")' OnUnfocus='() => Console.WriteLine("We unfocused")'>
+        Success Solid
+    </TailsButton>
 
-@((MarkupString)@Icons.Solid.Square3Stack3d)
+    <TailsButton Color="@Colors.Success" Variation="Variation.Outlined">
+        Success Outlined
+    </TailsButton>
+
+    <TailsButton Color="@Colors.Success" Variation="Variation.Text">
+        Success Text
+    </TailsButton>
+</div>

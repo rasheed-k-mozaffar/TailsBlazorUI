@@ -1,6 +1,7 @@
 @namespace TailsBlazor
 @inherits TailsButtonBase
 
-<button class="bg-amber-500 p-4 rounded-lg">
-    Click Me
+<button class="@_classes" style="@Style" @onclick="OnClick" type="@ButtonType" @onfocus="@OnFocus"
+    @onfocusout="@OnUnfocus">
+    @ChildContent
 </button>

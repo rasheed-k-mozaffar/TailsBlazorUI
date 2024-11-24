@@ -1,49 +1,48 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.razor"],
-  purge: ["./**/*.razor"],
+  content: ["./**/*.razor", "./**/*.razor.cs", "./**/*.cs", "./**/*.css"],
   theme: {
     extend: {
       colors: {
         primary: {
-          lighten: '#b2bbd2',
+          lighten: '#E4E9F1',
           DEFAULT: '#283044',
           darken: '#1e2433'
         },
         secondary: {
-          lighten: '#9fb5d1',
-          DEFAULT: '#3e5c81',
-          darken: '#35506e'
+          lighten: '#E4EAF2',
+          DEFAULT: '#3E5C81',
+          darken: '#35506E'
         },
         tertiary: {
-          lighten: '#d6aed5',
-          DEFAULT: '#ad5eaa',
-          darken: '#954b93'
+          lighten: '#F8F1F8',
+          DEFAULT: '#AD5EAA',
+          darken: '#954B93'
         },
         error: {
-          lighten: '#edabab',
-          DEFAULT: '#d74242',
-          darken: '#ca2b2b'
+          lighten: '#FBEEEE',
+          DEFAULT: '#D74242',
+          darken: '#CA2B2B'
         },
         success: {
-          lighten: '#b9e3b5',
-          DEFAULT: '#5bbe52',
-          darken: '#4db143'
+          lighten: '#E1F4E9',
+          DEFAULT: '#3CB870',
+          darken: '#35975E'
         },
         warning: {
-          lighten: '#fae3b2',
-          DEFAULT: '#f4bc44',
-          darken: '#f3b32b'
+          lighten: '#FEF8EC',
+          DEFAULT: '#F4BC44',
+          darken: '#F3B32B'
         },
         info: {
-          lighten: '#a6d5f2',
-          DEFAULT: '#52ade6',
-          darken: '#3ba2e3'
+          lighten: '#EDF7FC',
+          DEFAULT: '#52ADE6',
+          darken: '#3BA2E3'
         },
         neutral: {
-          lighten: '#e0e0e0',
-          DEFAULT: '#bebebe',
-          darken: '#a3a3a3'
+          lighten: '#F5F5F5',
+          DEFAULT: '#CCCCCC',
+          darken: '#BFBFBF'
         },
         text: {
           lighten: '#e0e0e0',
@@ -54,5 +53,6 @@ module.exports = {
     },
   },
   plugins: [],
+  purge: false
 }
 

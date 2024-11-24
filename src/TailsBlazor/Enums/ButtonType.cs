@@ -1,4 +1,4 @@
-namespace TailsBlazor.Enums;
+namespace TailsBlazor;
 
 public enum ButtonType
 {
