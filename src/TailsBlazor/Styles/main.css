@@ -117,8 +117,8 @@
 
     /*ALERT COMPONENT*/
 
-    .alert-base{
-        @apply p-4 items-center justify-items-center rounded-xl;
+    .alert-base {
+        @apply p-4 items-center justify-items-center rounded-[6px] text-sm;
     }
 
     .alert-solid {
@@ -130,98 +130,98 @@
     }
 
     .alert-outlined-primary {
-        @apply btn-outlined border-primary text-primary hover:bg-primary-lighten;
+        @apply alert-outlined border-primary text-primary;
     }
 
     .alert-outlined-secondary {
-        @apply btn-outlined border-secondary text-secondary hover:bg-secondary-lighten;
+        @apply alert-outlined border-secondary text-secondary;
     }
 
     .alert-outlined-tertiary {
-        @apply btn-outlined border-tertiary text-tertiary hover:bg-tertiary-lighten;
+        @apply alert-outlined border-tertiary text-tertiary;
     }
 
     .alert-outlined-error {
-        @apply btn-outlined border-error text-error hover:bg-error-lighten;
+        @apply alert-outlined border-error text-error;
     }
 
     .alert-outlined-success {
-        @apply btn-outlined border-success text-success hover:bg-success-lighten;
+        @apply alert-outlined border-success text-success;
     }
 
     .alert-outlined-warning {
-        @apply btn-outlined border-warning text-warning hover:bg-warning-lighten;
+        @apply alert-outlined border-warning text-warning;
     }
 
     .alert-outlined-info {
-        @apply btn-outlined border-info text-info hover:bg-info-lighten;
+        @apply alert-outlined border-info text-info;
     }
 
     .alert-outlined-neutral {
-        @apply btn-outlined border-neutral text-neutral hover:bg-neutral-lighten;
+        @apply alert-outlined border-neutral text-neutral;
     }
 
     .alert-solid-primary {
-        @apply btn-solid bg-primary hover:bg-primary-darken;
+        @apply alert-solid bg-primary;
     }
 
     .alert-solid-secondary {
-        @apply btn-solid bg-secondary hover:bg-secondary-darken;
+        @apply alert-solid bg-secondary;
     }
 
     .alert-solid-tertiary {
-        @apply btn-solid bg-tertiary hover:bg-tertiary-darken;
+        @apply alert-solid bg-tertiary;
     }
 
     .alert-solid-error {
-        @apply btn-solid bg-error hover:bg-error-darken;
+        @apply alert-solid bg-error;
     }
 
     .alert-solid-success {
-        @apply btn-solid bg-success hover:bg-success-darken;
+        @apply alert-solid bg-success;
     }
 
     .alert-solid-warning {
-        @apply btn-solid bg-warning hover:bg-warning-darken;
+        @apply alert-solid bg-warning;
     }
 
     .alert-solid-info {
-        @apply btn-solid bg-info hover:bg-info-darken;
+        @apply alert-solid bg-info;
     }
 
     .alert-solid-neutral {
-        @apply btn-solid bg-neutral hover:bg-neutral-darken;
+        @apply alert-solid bg-neutral;
     }
 
     .alert-text-primary {
-        @apply btn-text text-primary hover:bg-primary-lighten;
+        @apply alert-base text-primary;
     }
 
     .alert-text-secondary {
-        @apply btn-text text-secondary hover:bg-secondary-lighten;
+        @apply alert-base text-secondary;
     }
 
     .alert-text-tertiary {
-        @apply btn-text text-tertiary hover:bg-tertiary-lighten;
+        @apply alert-base text-tertiary;
     }
 
     .alert-text-error {
-        @apply btn-text text-error hover:bg-error-lighten;
+        @apply alert-base text-error;
     }
 
     .alert-text-success {
-        @apply btn-text text-success hover:bg-success-lighten;
+        @apply alert-base text-success;
     }
 
     .alert-text-warning {
-        @apply btn-text text-warning hover:bg-warning-lighten;
+        @apply alert-base text-warning;
     }
 
     .alert-text-info {
-        @apply btn-text text-info hover:bg-info-lighten;
+        @apply alert-base text-info;
     }
 
     .alert-text-neutral {
-        @apply btn-text text-neutral hover:bg-neutral-lighten;
+        @apply alert-base text-neutral;
     }
 }
