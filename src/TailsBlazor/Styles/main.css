@@ -446,6 +446,7 @@
     .tails-stack-h-gap-40 {
         @apply gap-x-40;
     }
+<<<<<<< Updated upstream
 
     /*ALERT COMPONENT*/
 
@@ -556,6 +557,8 @@
     .alert-text-neutral {
         @apply alert-base text-neutral;
     }
+=======
+>>>>>>> Stashed changes
     
     .pill-base {
         @apply px-4 py-1 rounded-full text-xs;
