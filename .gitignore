@@ -408,4 +408,4 @@ obj/
 .idea/**/dictionary.txt
 .idea/**/shelf/
 .idea_modules/
-/src/TailsBlazor/wwwroot/main.min.css
+src/TailsBlazor/wwwroot/main.min.css

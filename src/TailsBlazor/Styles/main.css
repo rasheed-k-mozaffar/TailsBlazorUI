@@ -4,7 +4,7 @@
 
 @layer base {
     .btn-base {
-        @apply p-2 rounded-[8px] text-xs transition-colors duration-200 focus:outline-2 focus:outline-blue-500;
+        @apply p-2 w-fit rounded-[8px] text-xs transition-colors duration-200 focus:outline-2 focus:outline-blue-500;
     }
 
     .btn-solid {
@@ -113,6 +113,338 @@
 
     .btn-text-neutral {
         @apply btn-text text-neutral hover:bg-neutral-lighten;
+    }
+
+    .tails-stack-base {
+        @apply flex w-full;
+    }
+
+    .tails-stack-vertical {
+        @apply tails-stack-base flex-col;
+    }
+
+    .tails-stack-horizontal {
+        @apply tails-stack-base flex-row;
+    }
+
+    .tails-stack-v-gap-1 {
+        @apply gap-y-1;
+    }
+
+    .tails-stack-v-gap-2 {
+        @apply gap-y-2;
+    }
+
+    .tails-stack-v-gap-3 {
+        @apply gap-y-3;
+    }
+
+    .tails-stack-v-gap-4 {
+        @apply gap-y-4;
+    }
+
+    .tails-stack-v-gap-5 {
+        @apply gap-y-5;
+    }
+
+    .tails-stack-v-gap-6 {
+        @apply gap-y-6;
+    }
+
+    .tails-stack-v-gap-7 {
+        @apply gap-y-7;
+    }
+
+    .tails-stack-v-gap-8 {
+        @apply gap-y-8;
+    }
+
+    .tails-stack-v-gap-9 {
+        @apply gap-y-9;
+    }
+
+    .tails-stack-v-gap-10 {
+        @apply gap-y-10;
+    }
+
+    .tails-stack-v-gap-11 {
+        @apply gap-y-11;
+    }
+
+    .tails-stack-v-gap-12 {
+        @apply gap-y-12;
+    }
+
+    .tails-stack-v-gap-13 {
+        @apply gap-y-13;
+    }
+
+    .tails-stack-v-gap-14 {
+        @apply gap-y-14;
+    }
+
+    .tails-stack-v-gap-15 {
+        @apply gap-y-15;
+    }
+
+    .tails-stack-v-gap-16 {
+        @apply gap-y-16;
+    }
+
+    .tails-stack-v-gap-17 {
+        @apply gap-y-17;
+    }
+
+    .tails-stack-v-gap-18 {
+        @apply gap-y-18;
+    }
+
+    .tails-stack-v-gap-19 {
+        @apply gap-y-19;
+    }
+
+    .tails-stack-v-gap-20 {
+        @apply gap-y-20;
+    }
+
+    .tails-stack-v-gap-21 {
+        @apply gap-y-21;
+    }
+
+    .tails-stack-v-gap-22 {
+        @apply gap-y-22;
+    }
+
+    .tails-stack-v-gap-23 {
+        @apply gap-y-23;
+    }
+
+    .tails-stack-v-gap-24 {
+        @apply gap-y-24;
+    }
+
+    .tails-stack-v-gap-25 {
+        @apply gap-y-25;
+    }
+
+    .tails-stack-v-gap-26 {
+        @apply gap-y-26;
+    }
+
+    .tails-stack-v-gap-27 {
+        @apply gap-y-27;
+    }
+
+    .tails-stack-v-gap-28 {
+        @apply gap-y-28;
+    }
+
+    .tails-stack-v-gap-29 {
+        @apply gap-y-29;
+    }
+
+    .tails-stack-v-gap-30 {
+        @apply gap-y-30;
+    }
+
+    .tails-stack-v-gap-31 {
+        @apply gap-y-31;
+    }
+
+    .tails-stack-v-gap-32 {
+        @apply gap-y-32;
+    }
+
+    .tails-stack-v-gap-33 {
+        @apply gap-y-33;
+    }
+
+    .tails-stack-v-gap-34 {
+        @apply gap-y-34;
+    }
+
+    .tails-stack-v-gap-35 {
+        @apply gap-y-35;
+    }
+
+    .tails-stack-v-gap-36 {
+        @apply gap-y-36;
+    }
+
+    .tails-stack-v-gap-37 {
+        @apply gap-y-37;
+    }
+
+    .tails-stack-v-gap-38 {
+        @apply gap-y-38;
+    }
+
+    .tails-stack-v-gap-39 {
+        @apply gap-y-39;
+    }
+
+    .tails-stack-v-gap-40 {
+        @apply gap-y-40;
+    }
+
+    .tails-stack-h-gap-1 {
+        @apply gap-x-1;
+    }
+
+    .tails-stack-h-gap-2 {
+        @apply gap-x-2;
+    }
+
+    .tails-stack-h-gap-3 {
+        @apply gap-x-3;
+    }
+
+    .tails-stack-h-gap-4 {
+        @apply gap-x-4;
+    }
+
+    .tails-stack-h-gap-5 {
+        @apply gap-x-5;
+    }
+
+    .tails-stack-h-gap-6 {
+        @apply gap-x-6;
+    }
+
+    .tails-stack-h-gap-7 {
+        @apply gap-x-7;
+    }
+
+    .tails-stack-h-gap-8 {
+        @apply gap-x-8;
+    }
+
+    .tails-stack-h-gap-9 {
+        @apply gap-x-9;
+    }
+
+    .tails-stack-h-gap-10 {
+        @apply gap-x-10;
+    }
+
+    .tails-stack-h-gap-11 {
+        @apply gap-x-11;
+    }
+
+    .tails-stack-h-gap-12 {
+        @apply gap-x-12;
+    }
+
+    .tails-stack-h-gap-13 {
+        @apply gap-x-13;
+    }
+
+    .tails-stack-h-gap-14 {
+        @apply gap-x-14;
+    }
+
+    .tails-stack-h-gap-15 {
+        @apply gap-x-15;
+    }
+
+    .tails-stack-h-gap-16 {
+        @apply gap-x-16;
+    }
+
+    .tails-stack-h-gap-17 {
+        @apply gap-x-17;
+    }
+
+    .tails-stack-h-gap-18 {
+        @apply gap-x-18;
+    }
+
+    .tails-stack-h-gap-19 {
+        @apply gap-x-19;
+    }
+
+    .tails-stack-h-gap-20 {
+        @apply gap-x-20;
+    }
+
+    .tails-stack-h-gap-21 {
+        @apply gap-x-21;
+    }
+
+    .tails-stack-h-gap-22 {
+        @apply gap-x-22;
+    }
+
+    .tails-stack-h-gap-23 {
+        @apply gap-x-23;
+    }
+
+    .tails-stack-h-gap-24 {
+        @apply gap-x-24;
+    }
+
+    .tails-stack-h-gap-25 {
+        @apply gap-x-25;
+    }
+
+    .tails-stack-h-gap-26 {
+        @apply gap-x-26;
+    }
+
+    .tails-stack-h-gap-27 {
+        @apply gap-x-27;
+    }
+
+    .tails-stack-h-gap-28 {
+        @apply gap-x-28;
+    }
+
+    .tails-stack-h-gap-29 {
+        @apply gap-x-29;
+    }
+
+    .tails-stack-h-gap-30 {
+        @apply gap-x-30;
+    }
+
+    .tails-stack-h-gap-31 {
+        @apply gap-x-31;
+    }
+
+    .tails-stack-h-gap-32 {
+        @apply gap-x-32;
+    }
+
+    .tails-stack-h-gap-33 {
+        @apply gap-x-33;
+    }
+
+    .tails-stack-h-gap-34 {
+        @apply gap-x-34;
+    }
+
+    .tails-stack-h-gap-35 {
+        @apply gap-x-35;
+    }
+
+    .tails-stack-h-gap-36 {
+        @apply gap-x-36;
+    }
+
+    .tails-stack-h-gap-37 {
+        @apply gap-x-37;
+    }
+
+    .tails-stack-h-gap-38 {
+        @apply gap-x-38;
+    }
+
+    .tails-stack-h-gap-39 {
+        @apply gap-x-39;
+    }
+
+    .tails-stack-h-gap-40 {
+        @apply gap-x-40;
     }
 
     /*ALERT COMPONENT*/
