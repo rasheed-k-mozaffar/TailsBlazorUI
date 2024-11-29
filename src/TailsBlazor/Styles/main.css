@@ -114,4 +114,114 @@
     .btn-text-neutral {
         @apply btn-text text-neutral hover:bg-neutral-lighten;
     }
+
+    /*ALERT COMPONENT*/
+
+    .alert-base{
+        @apply p-4 items-center justify-items-center rounded-xl;
+    }
+
+    .alert-solid {
+        @apply alert-base text-white;
+    }
+
+    .alert-outlined {
+        @apply alert-base border;
+    }
+
+    .alert-outlined-primary {
+        @apply btn-outlined border-primary text-primary hover:bg-primary-lighten;
+    }
+
+    .alert-outlined-secondary {
+        @apply btn-outlined border-secondary text-secondary hover:bg-secondary-lighten;
+    }
+
+    .alert-outlined-tertiary {
+        @apply btn-outlined border-tertiary text-tertiary hover:bg-tertiary-lighten;
+    }
+
+    .alert-outlined-error {
+        @apply btn-outlined border-error text-error hover:bg-error-lighten;
+    }
+
+    .alert-outlined-success {
+        @apply btn-outlined border-success text-success hover:bg-success-lighten;
+    }
+
+    .alert-outlined-warning {
+        @apply btn-outlined border-warning text-warning hover:bg-warning-lighten;
+    }
+
+    .alert-outlined-info {
+        @apply btn-outlined border-info text-info hover:bg-info-lighten;
+    }
+
+    .alert-outlined-neutral {
+        @apply btn-outlined border-neutral text-neutral hover:bg-neutral-lighten;
+    }
+
+    .alert-solid-primary {
+        @apply btn-solid bg-primary hover:bg-primary-darken;
+    }
+
+    .alert-solid-secondary {
+        @apply btn-solid bg-secondary hover:bg-secondary-darken;
+    }
+
+    .alert-solid-tertiary {
+        @apply btn-solid bg-tertiary hover:bg-tertiary-darken;
+    }
+
+    .alert-solid-error {
+        @apply btn-solid bg-error hover:bg-error-darken;
+    }
+
+    .alert-solid-success {
+        @apply btn-solid bg-success hover:bg-success-darken;
+    }
+
+    .alert-solid-warning {
+        @apply btn-solid bg-warning hover:bg-warning-darken;
+    }
+
+    .alert-solid-info {
+        @apply btn-solid bg-info hover:bg-info-darken;
+    }
+
+    .alert-solid-neutral {
+        @apply btn-solid bg-neutral hover:bg-neutral-darken;
+    }
+
+    .alert-text-primary {
+        @apply btn-text text-primary hover:bg-primary-lighten;
+    }
+
+    .alert-text-secondary {
+        @apply btn-text text-secondary hover:bg-secondary-lighten;
+    }
+
+    .alert-text-tertiary {
+        @apply btn-text text-tertiary hover:bg-tertiary-lighten;
+    }
+
+    .alert-text-error {
+        @apply btn-text text-error hover:bg-error-lighten;
+    }
+
+    .alert-text-success {
+        @apply btn-text text-success hover:bg-success-lighten;
+    }
+
+    .alert-text-warning {
+        @apply btn-text text-warning hover:bg-warning-lighten;
+    }
+
+    .alert-text-info {
+        @apply btn-text text-info hover:bg-info-lighten;
+    }
+
+    .alert-text-neutral {
+        @apply btn-text text-neutral hover:bg-neutral-lighten;
+    }
 }
