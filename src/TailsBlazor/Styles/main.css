@@ -556,4 +556,12 @@
     .alert-text-neutral {
         @apply alert-base text-neutral;
     }
+    
+    .pill-base {
+        @apply px-4 py-1 rounded-full text-xs;
+    }
+    
+    .pill-solid {
+        @apply pill-base text-white 
+    }
 }
