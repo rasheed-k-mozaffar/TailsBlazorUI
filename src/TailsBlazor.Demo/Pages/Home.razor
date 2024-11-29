@@ -1,19 +1,9 @@
-﻿@page "/"
+@page "/"
 
 <PageTitle>Home</PageTitle>
 
 
-<div class="flex items-center gap-x-5">
-    <TailsButton Color="@Colors.Secondary" Variation="Variation.Outlined"
-        OnFocus='() => Console.WriteLine("We focused")' OnUnfocus='() => Console.WriteLine("We unfocused")'>
-        Success Solid
-    </TailsButton>
+<TailsStack Spacing="1" Orientation="Orientation.Horizontal" Justify="Justify.SpaceBetween" Align="Align.Baseline"
+    Width="25">
 
-    <TailsButton Color="@Colors.Success" Variation="Variation.Outlined">
-        Success Outlined
-    </TailsButton>
-
-    <TailsButton Color="@Colors.Success" Variation="Variation.Text">
-        Success Text
-    </TailsButton>
-</div>
+</TailsStack>

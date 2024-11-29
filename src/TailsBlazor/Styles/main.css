@@ -446,4 +446,114 @@
     .tails-stack-h-gap-40 {
         @apply gap-x-40;
     }
+
+    /*ALERT COMPONENT*/
+
+    .alert-base {
+        @apply p-4 items-center justify-items-center rounded-[6px] text-sm;
+    }
+
+    .alert-solid {
+        @apply alert-base text-white;
+    }
+
+    .alert-outlined {
+        @apply alert-base border;
+    }
+
+    .alert-outlined-primary {
+        @apply alert-outlined border-primary text-primary;
+    }
+
+    .alert-outlined-secondary {
+        @apply alert-outlined border-secondary text-secondary;
+    }
+
+    .alert-outlined-tertiary {
+        @apply alert-outlined border-tertiary text-tertiary;
+    }
+
+    .alert-outlined-error {
+        @apply alert-outlined border-error text-error;
+    }
+
+    .alert-outlined-success {
+        @apply alert-outlined border-success text-success;
+    }
+
+    .alert-outlined-warning {
+        @apply alert-outlined border-warning text-warning;
+    }
+
+    .alert-outlined-info {
+        @apply alert-outlined border-info text-info;
+    }
+
+    .alert-outlined-neutral {
+        @apply alert-outlined border-neutral text-neutral;
+    }
+
+    .alert-solid-primary {
+        @apply alert-solid bg-primary;
+    }
+
+    .alert-solid-secondary {
+        @apply alert-solid bg-secondary;
+    }
+
+    .alert-solid-tertiary {
+        @apply alert-solid bg-tertiary;
+    }
+
+    .alert-solid-error {
+        @apply alert-solid bg-error;
+    }
+
+    .alert-solid-success {
+        @apply alert-solid bg-success;
+    }
+
+    .alert-solid-warning {
+        @apply alert-solid bg-warning;
+    }
+
+    .alert-solid-info {
+        @apply alert-solid bg-info;
+    }
+
+    .alert-solid-neutral {
+        @apply alert-solid bg-neutral;
+    }
+
+    .alert-text-primary {
+        @apply alert-base text-primary;
+    }
+
+    .alert-text-secondary {
+        @apply alert-base text-secondary;
+    }
+
+    .alert-text-tertiary {
+        @apply alert-base text-tertiary;
+    }
+
+    .alert-text-error {
+        @apply alert-base text-error;
+    }
+
+    .alert-text-success {
+        @apply alert-base text-success;
+    }
+
+    .alert-text-warning {
+        @apply alert-base text-warning;
+    }
+
+    .alert-text-info {
+        @apply alert-base text-info;
+    }
+
+    .alert-text-neutral {
+        @apply alert-base text-neutral;
+    }
 }
