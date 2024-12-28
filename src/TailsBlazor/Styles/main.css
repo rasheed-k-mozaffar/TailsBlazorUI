@@ -557,14 +557,147 @@
     .alert-text-neutral {
         @apply alert-base text-neutral;
     }
-=======
->>>>>>> Stashed changes
+    
+    /*PILL COMPONENT */
     
     .pill-base {
-        @apply px-4 py-1 rounded-full text-xs;
+        @apply flex items-center w-fit px-5 py-1 rounded-full;
     }
     
     .pill-solid {
-        @apply pill-base text-white 
+        @apply pill-base text-white ;
     }
+
+    .pill-outlined {
+        @apply pill-base border;
+    }
+    
+    .pill-text {
+        @apply pill-base ;
+    }
+    
+    .pill-text-xs {
+        @apply text-xs
+    }
+    
+    .pill-text-sm {
+        @apply text-sm;
+    }
+    
+    .pill-text-md {
+        @apply text-base;
+    }
+    
+    .pill-text-lg {
+        @apply text-lg;
+    }
+    
+    .pill-text-xl {
+        @apply text-xl;
+    }
+
+    .pill-text-primary {
+        @apply pill-text bg-primary-lighten text-primary;
+    }
+    
+    .pill-text-secondary {
+        @apply pill-text bg-secondary-lighten text-secondary;
+    }
+    
+    .pill-text-tertiary {
+        @apply pill-text bg-tertiary-lighten text-tertiary;
+    }
+    
+    .pill-text-error {
+        @apply pill-text bg-error-lighten text-error;
+    }
+    
+    .pill-text-success {
+        @apply pill-text bg-success-lighten text-success;
+    }
+    
+    .pill-text-warning {
+        @apply pill-text bg-warning-lighten text-warning;
+    }
+    
+    .pill-text-info {
+        @apply pill-text bg-info-lighten text-info;
+    }
+    
+    .pill-text-neutral {
+        @apply pill-text bg-neutral-lighten text-neutral;
+    }
+    
+    .pill-outlined-primary{
+        @apply pill-outlined border-primary text-primary ;
+    }
+    
+    .pill-outlined-secondary{
+        @apply pill-outlined border-secondary text-secondary  ;
+    }
+    
+    .pill-outlined-tertiary{
+        @apply pill-outlined border-tertiary text-tertiary;
+    }
+    
+    .pill-outlined-error{
+        @apply pill-outlined border-error text-error;
+    }
+    
+    .pill-outlined-success{
+        @apply pill-outlined border-success text-success;
+    }
+    
+    .pill-outlined-warning
+    {
+        @apply pill-outlined border-warning text-warning;
+    }
+    
+    .pill-outlined-info{
+        @apply pill-outlined border-info text-info;
+    }
+    
+    .pill-outlined-neutral{
+        @apply pill-outlined border-neutral text-neutral;
+    }
+    
+    .pill-outlined-text{
+        @apply pill-outlined border-neutral text-neutral;
+    }
+    
+    .pill-solid-primary {
+        @apply pill-solid bg-primary;
+    }
+    
+    .pill-solid-secondary {
+        @apply pill-solid bg-secondary;
+    }
+    
+    .pill-solid-tertiary {
+        @apply pill-solid bg-tertiary;
+    }
+    
+    .pill-solid-error {
+        @apply pill-solid bg-error;
+    }
+    
+    .pill-solid-success {
+        @apply pill-solid bg-success;
+    }
+    
+    .pill-solid-warning {
+        @apply pill-solid bg-warning;
+    }
+    
+    .pill-solid-info {
+        @apply pill-solid bg-info;
+    }
+    
+    .pill-solid-neutral {
+        @apply pill-solid bg-neutral;
+    }
+    
+   
+    
+ 
 }
