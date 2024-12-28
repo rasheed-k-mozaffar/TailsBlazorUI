@@ -1,7 +1,7 @@
 @namespace TailsBlazor
 @inherits TailsButtonBase
 
-<button class="@_classes" style="@Style" @onclick="OnClick" type="@ButtonType" @onfocus="@OnFocus"
+<button class="@_classes" style="@Style" @onclick="OnClick" type="@ButtonType.GetButtonType()" @onfocus="@OnFocus"
     @onfocusout="@OnUnfocus">
     @ChildContent
 </button>
