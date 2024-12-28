@@ -10,7 +10,7 @@ public partial class TailsAlert : TailsComponentBase
     [Parameter] public RenderFragment ChildContent { get; set; }
 
     /// <summary>
-    /// Sets the variation of the alert. The default is Solid. Available other values are Outlined and Text.
+    /// Sets the variation of the alert. The default is Solid. Available other values are Outline and Text.
     /// </summary>
     [Parameter]
     public Variation Variation { get; set; } = Variation.Solid;
