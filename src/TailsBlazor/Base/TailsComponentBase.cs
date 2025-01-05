@@ -19,6 +19,6 @@ public class TailsComponentBase : ComponentBase
     /// <summary>
     /// The HTML attributes to apply on the component 
     /// </summary>
-    [Parameter] 
+    [Parameter(CaptureUnmatchedValues = true)] 
     public Dictionary<string, object>? UserAttributes { get; set; }
 }

@@ -1,0 +1,27 @@
+@namespace TailsBlazor
+@inherits TailsComponentBase
+
+<div class="@_classes" style="@Style" @attributes="UserAttributes">
+    @if (CardHeader != null)
+    {
+        <div class="card-header">
+            @CardHeader
+        </div>
+    }
+    @if (CardBody != null)
+    {
+        <div class="card-body">
+            @CardBody
+        </div>
+    }
+    @if (CardFooter != null)
+    {
+        <div class="card-footer">
+            @CardFooter
+        </div>
+    }
+    @if (CardHeader == null && CardBody == null && CardFooter == null)
+    {
+        @ChildContent
+    }
+</div>

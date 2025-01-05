@@ -1,9 +1,33 @@
 @page "/"
+@using System.Drawing
+@using TailsBlazor.Components.Pill
+@using Size = TailsBlazor.Size
 
 <PageTitle>Home</PageTitle>
 
 
 <TailsStack Spacing="1" Orientation="Orientation.Horizontal" Justify="Justify.SpaceBetween" Align="Align.Baseline"
-    Width="25">
+    Width=100>
 
+    <TailsCard BorderRadius="4"  Shadow="Shadow.ExtraLarge" title="hello world!" @onclick='() => Console.WriteLine("Hello, World!")'>
+        <CardHeader>
+            <h1>This is a default card.</h1>
+        </CardHeader>
+
+        <CardBody>
+            <h2 class="border-primary">This is the body content of the card.</h2>
+        </CardBody>
+
+        <CardFooter>
+            <TailsButton Color="@Colors.Primary" Variation="Variation.Outlined">Action</TailsButton>
+        </CardFooter>
+    </TailsCard>
+    
+    <TailsAlert  Variation="Variation.Solid" Color="@Colors.Success" >
+        User created successfully!
+    </TailsAlert>
+    
+    <TailsPill Variation="Variation.Solid" Color="@Colors.Info" Size="Size.ExtraSmall">
+        Hey,,,, This is a message
+    </TailsPill>
 </TailsStack>
