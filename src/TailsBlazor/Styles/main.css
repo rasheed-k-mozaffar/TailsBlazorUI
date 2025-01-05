@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer components {
     .btn-base {
         @apply p-2 w-fit rounded-[8px] text-xs transition-colors duration-200 focus:outline-2 focus:outline-blue-500;
     }
@@ -700,4 +700,157 @@
    
     
  
+
+    .validation-message {
+        @apply text-xs text-error mt-1;
+    }
+
+    /* INPUT FIELD COMPONENT */
+    .input-field-base {
+        @apply transition-all text-sm text-text placeholder:text-text-lighten;
+    }
+
+    /* SIZES */
+    .input-field-small {
+        @apply p-1.5;
+    }
+
+    .input-field-standard {
+        @apply p-2.5;
+    }
+
+    .input-field-enlarged {
+        @apply p-3.5;
+    }
+
+    /* VARIANT BASES */
+    .input-field-solid-base {
+        @apply rounded-md input-field-base bg-neutral-lighten text-text outline-none;
+    }
+
+    .input-field-outlined-base {
+        @apply rounded-md input-field-base bg-transparent text-text border-2 outline-none border-neutral;
+    }
+
+    .input-field-text-base {
+        @apply input-field-base bg-transparent text-text border-b-2 outline-none border-neutral;
+    }
+
+    /* VARIANTS */
+    .input-field-solid-primary {
+        @apply input-field-solid-base;
+    }
+
+    .input-field-solid-secondary {
+        @apply input-field-solid-base;
+    }
+
+    .input-field-solid-tertiary {
+        @apply input-field-solid-base;
+    }
+
+    .input-field-solid-error {
+        @apply input-field-solid-base;
+    }
+
+    .input-field-solid-success {
+        @apply input-field-solid-base;
+    }
+
+    .input-field-solid-warning {
+        @apply input-field-solid-base;
+    }
+
+    .input-field-solid-info {
+        @apply input-field-solid-base;
+    }
+
+    .input-field-solid-neutral {
+        @apply input-field-solid-base;
+    }
+
+    .input-field-outlined-primary {
+        @apply input-field-outlined-base focus:border-primary;
+    }
+
+    .input-field-outlined-secondary {
+        @apply input-field-outlined-base focus:border-secondary;
+    }
+
+    .input-field-outlined-tertiary {
+        @apply input-field-outlined-base focus:border-tertiary;
+    }
+
+    .input-field-outlined-error {
+        @apply input-field-outlined-base focus:border-error;
+    }
+
+    .input-field-outlined-success {
+        @apply input-field-outlined-base focus:border-success;
+    }
+
+    .input-field-outlined-warning {
+        @apply input-field-outlined-base focus:border-warning;
+    }
+
+    .input-field-outlined-info {
+        @apply input-field-outlined-base focus:border-info;
+    }
+
+    .input-field-outlined-neutral {
+        @apply input-field-outlined-base focus:border-neutral;
+    }
+
+    .input-field-text-primary {
+        @apply input-field-text-base focus:border-primary;
+    }
+
+    .input-field-text-secondary {
+        @apply input-field-text-base focus:border-secondary;
+    }
+
+    .input-field-text-tertiary {
+        @apply input-field-text-base focus:border-tertiary;
+    }
+
+    .input-field-text-error {
+        @apply input-field-text-base focus:border-error;
+    }
+
+    .input-field-text-success {
+        @apply input-field-text-base focus:border-success;
+    }
+
+    .input-field-text-warning {
+        @apply input-field-text-base focus:border-warning;
+    }
+
+    .input-field-text-info {
+        @apply input-field-text-base focus:border-info;
+    }
+
+    .input-field-text-neutral {
+        @apply input-field-text-base focus:border-neutral;
+    }
+
+    .input-field-invalid {
+        @apply border-error text-error placeholder:text-error;
+    }
+
+    .input-field-disabled-base {
+        @apply cursor-not-allowed text-neutral;
+    }
+
+
+    .input-field-solid-disabled {
+        @apply input-field-solid-base input-field-disabled-base bg-neutral-lighten;
+    }
+
+    .input-field-outlined-disabled {
+        @apply input-field-outlined-base input-field-disabled-base border-neutral-lighten;
+    }
+
+    .input-field-text-disabled {
+        @apply input-field-text-base input-field-disabled-base border-neutral-lighten;
+    }
 }

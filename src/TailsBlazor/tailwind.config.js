@@ -68,8 +68,8 @@ module.exports = {
           darken: '#BFBFBF'
         },
         text: {
-          lighten: '#e0e0e0',
-          DEFAULT: '#252525',
+          lighten: '#A7A7A7',
+          DEFAULT: '#626262',
           darken: '#141414'
         }
       }
