@@ -38,4 +38,24 @@ internal static class EnumExtensions
             _ => "button"
         };
     }
+
+    /// <summary>
+    /// Returns the input field type based on the FieldType enum.
+    /// </summary>
+    /// <param name="fieldType"></param>
+    /// <returns></returns>
+    public static string GetFieldType(this FieldType fieldType)
+    {
+        return fieldType switch
+        {
+            FieldType.Text => "text",
+            FieldType.Password => "password",
+            FieldType.Email => "email",
+            FieldType.Number => "number",
+            FieldType.Phone => "tel",
+            FieldType.Date => "date",
+            FieldType.Time => "time",
+            _ => "text"
+        };
+    }
 }
