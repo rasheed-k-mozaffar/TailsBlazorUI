@@ -1,0 +1,12 @@
+﻿@namespace TailsBlazor
+@inherits TailsInputFieldBase<T>
+@typeparam T
+
+<div>
+    <input id="@FieldIdentifier.FieldName" @bind="@Value" @oninput="HandleInput" class="@Classes" style="@Style"
+        @onfocus="@OnFocus" @onblur="@OnBlur" placeholder="@Placeholder" disabled="@Disabled" />
+    @if (For is not null)
+    {
+        <ValidationMessage For="@For" class="validation-message" />
+    }
+</div>
