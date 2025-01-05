@@ -31,4 +31,16 @@ public static class StringExtensions
             _ => "md"
         };
     }
+
+    public static string GetShadowClass(this Shadow shadow)
+    {
+        return shadow switch
+        {
+            Shadow.ExtraSmall => "sm",
+            Shadow.Small => "md",
+            Shadow.Medium => "lg",
+            Shadow.Large => "xl",
+            Shadow.ExtraLarge => "2xl"
+        };
+    }
 }

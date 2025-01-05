@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1 {
+        @apply text-2xl font-bold;
+    }
+    
+    h2 {
+        @apply text-xl font-bold;
+    }
+
+    h3 {
+        @apply text-lg font-bold;
+    }
+
+    h4 {
+        @apply text-base font-semibold;
+    }
+
+    h5 {
+        @apply text-sm font-semibold;
+    }
+
+    h6 {
+        @apply text-xs font-medium;
+    }
+}
+
 @layer components {
     .btn-base {
         @apply p-2 w-fit rounded-[8px] text-xs transition-colors duration-200 focus:outline-2 focus:outline-blue-500;
@@ -446,7 +472,7 @@
     .tails-stack-h-gap-40 {
         @apply gap-x-40;
     }
-
+    
     /*ALERT COMPONENT*/
 
     .alert-base {
@@ -696,8 +722,67 @@
         @apply pill-solid bg-neutral;
     }
     
-   
+   .card-base {
+       @apply w-fit rounded-md shadow-lg;
+   }
+
+    .card-header {
+        @apply px-4 py-2;
+    }
+
+    .card-body {
+        @apply px-4 py-2;
+    }
+
+    .card-footer {
+        @apply px-4 py-2;
+    }
     
+   .card-shadow-sm {
+       @apply shadow-sm;
+   } 
+    
+   .card-shadow-md {
+       @apply shadow-md;
+   } 
+    
+   .card-shadow-lg {
+       @apply shadow-lg;
+   }
+    
+   .card-shadow-xl {
+       @apply shadow-xl;
+   } 
+    
+   .card-shadow-2xl {
+       @apply shadow-2xl;
+   }
+
+   
+
+    .card-border-radius-1 {
+        @apply rounded-sm;
+    }
+
+    .card-border-radius-2 {
+        @apply rounded-md;
+    }
+
+    .card-border-radius-3 {
+        @apply rounded-lg;
+    }
+
+    .card-border-radius-4 {
+        @apply rounded-xl;
+    }
+
+    .card-border-radius-5 {
+        @apply rounded-2xl;
+    }
+
+    .card-border-radius-6 {
+        @apply rounded-3xl;
+    }
  
 
     .validation-message {
