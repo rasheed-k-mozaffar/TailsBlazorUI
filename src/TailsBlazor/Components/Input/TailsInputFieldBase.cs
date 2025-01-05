@@ -1,15 +1,14 @@
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace TailsBlazor;
 
 public class TailsInputFieldBase<T> : TailsComponentBase
 {
     private const string BaseClass = "input-field";
-    private const string DisabledClass = "{0}-{1}-disabled";
     private const string StyleClass = "{0}-{1}-{2}";
-
     protected FieldIdentifier FieldIdentifier;
     protected bool IsInvalid => EditContext?.GetValidationMessages(FieldIdentifier).Any() ?? false;
     protected string Classes => new ClassBuilder()
@@ -21,6 +20,33 @@ public class TailsInputFieldBase<T> : TailsComponentBase
     /// The value of the input field.
     /// </summary>
     [Parameter] public T? Value { get; set; }
+
+    protected string? FormattedValue
+    {
+        get => FieldType == FieldType.Date && Value is DateTime dateValue
+            ? dateValue.ToString("yyyy-MM-dd")
+            : Value?.ToString();
+        set
+        {
+            if (FieldType == FieldType.Date && typeof(T) == typeof(DateTime))
+            {
+                if (DateTime.TryParse(value, out var dateValue))
+                {
+                    if (!EqualityComparer<T>.Default.Equals(Value, (T)(object)dateValue))
+                    {
+                        Value = (T)(object)dateValue;
+                    }
+                }
+            }
+            else
+            {
+                if (!EqualityComparer<T>.Default.Equals(Value, (T)(object)value))
+                {
+                    Value = (T)(object)value;
+                }
+            }
+        }
+    }
 
     /// <summary>
     /// The callback which is called when the value of the input field changes.
@@ -92,20 +118,62 @@ public class TailsInputFieldBase<T> : TailsComponentBase
     /// </summary>
     [CascadingParameter] public EditContext? EditContext { get; set; }
 
+    protected bool ShouldDeferValueChanged { get; set; }
+
     protected override void OnInitialized()
     {
         if (For is not null)
             FieldIdentifier = FieldIdentifier.Create(For);
     }
-    protected async Task HandleInput(ChangeEventArgs e)
+
+    protected virtual async Task HandleInput(ChangeEventArgs e)
     {
-        if (e.Value is T newValue)
+        if (e.Value is string stringValue && FieldType == FieldType.Date && typeof(T) == typeof(DateTime))
+        {
+            if (DateTime.TryParse(stringValue, out var dateValue))
+            {
+                Value = (T)(object)dateValue;
+
+                if (Immediate)
+                {
+                    await ValueChanged.InvokeAsync(Value);
+                    EditContext?.NotifyFieldChanged(FieldIdentifier);
+                }
+                else
+                {
+                    ShouldDeferValueChanged = true;
+                }
+
+                // If the input was triggered by a date picker, mimic blur behavior
+                await HandleBlur();
+            }
+        }
+        else if (e.Value is T newValue)
         {
             Value = newValue;
-            await ValueChanged.InvokeAsync(newValue);
+
             if (Immediate)
+            {
+                await ValueChanged.InvokeAsync(newValue);
                 EditContext?.NotifyFieldChanged(FieldIdentifier);
+            }
+            else
+            {
+                ShouldDeferValueChanged = true;
+            }
         }
+    }
+
+    protected async Task HandleBlur()
+    {
+        if (ShouldDeferValueChanged)
+        {
+            ShouldDeferValueChanged = false;
+            await ValueChanged.InvokeAsync(Value);
+            EditContext?.NotifyFieldChanged(FieldIdentifier);
+        }
+
+        await OnBlur.InvokeAsync(); // Trigger any custom blur logic
     }
 
     protected virtual string GetFieldClass()
