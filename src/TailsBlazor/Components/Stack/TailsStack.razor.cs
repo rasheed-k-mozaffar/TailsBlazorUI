@@ -35,6 +35,7 @@ public partial class TailsStack : TailsComponentBase
     [Parameter] public double Width { get; set; } = 100;
 
     private string _classes => new ClassBuilder()
+        .AddClass(Class)
         .AddClass("tails-stack-vertical", Orientation == Orientation.Vertical)
         .AddClass("tails-stack-horizontal", Orientation == Orientation.Horizontal)
         .AddClass($"tails-stack-v-gap-{Spacing}", Orientation == Orientation.Vertical)

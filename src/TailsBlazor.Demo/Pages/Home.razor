@@ -1,33 +1,174 @@
 @page "/"
 @using System.Drawing
+@using System.ComponentModel.DataAnnotations
 @using TailsBlazor.Components.Pill
 @using Size = TailsBlazor.Size
 
 <PageTitle>Home</PageTitle>
 
+<TailsStack Spacing="5" Class="p-5">
+    <h1>Tails Alerts</h1>
+    <TailsStack Orientation="Orientation.Horizontal">
+        <TailsStack Spacing="5">
+            <TailsAlert Color="@Colors.Primary">
+                <strong>Primary!</strong> This is a primary alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Success">
+                <strong>Success!</strong> This is a success alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Info">
+                <strong>Info!</strong> This is an info alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Warning">
+                <strong>Warning!</strong> This is a warning alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Error">
+                <strong>Danger!</strong> This is a danger alert.
+            </TailsAlert>
+        </TailsStack>
 
-<TailsStack Spacing="1" Orientation="Orientation.Horizontal" Justify="Justify.SpaceBetween" Align="Align.Baseline"
-    Width=100>
+        <TailsStack Spacing="5">
+            <TailsAlert Color="@Colors.Primary" Variation="Variation.Outlined">
+                <strong>Primary!</strong> This is a primary alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Success" Variation="Variation.Outlined">
+                <strong>Success!</strong> This is a success alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Info" Variation="Variation.Outlined">
+                <strong>Info!</strong> This is an info alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Warning" Variation="Variation.Outlined">
+                <strong>Warning!</strong> This is a warning alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Error" Variation="Variation.Outlined">
+                <strong>Danger!</strong> This is a danger alert.
+            </TailsAlert>
+        </TailsStack>
 
-    <TailsCard BorderRadius="4"  Shadow="Shadow.ExtraLarge" title="hello world!" @onclick='() => Console.WriteLine("Hello, World!")'>
+        <TailsStack Spacing="5">
+            <TailsAlert Color="@Colors.Primary" Variation="Variation.Text">
+                <strong>Primary!</strong> This is a primary alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Success" Variation="Variation.Text">
+                <strong>Success!</strong> This is a success alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Info" Variation="Variation.Text">
+                <strong>Info!</strong> This is an info alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Warning" Variation="Variation.Text">
+                <strong>Warning!</strong> This is a warning alert.
+            </TailsAlert>
+            <TailsAlert Color="@Colors.Error" Variation="Variation.Text">
+                <strong>Danger!</strong> This is a danger alert.
+            </TailsAlert>
+        </TailsStack>
+    </TailsStack>
+
+    <h1>Tails Pills</h1>
+    <TailsStack Orientation="Orientation.Horizontal" Spacing="5">
+        <TailsPill Color="@Colors.Primary" Size="@Size.Small">Primary</TailsPill>
+        <TailsPill Color="@Colors.Success" Size="@Size.Small">Success</TailsPill>
+        <TailsPill Color="@Colors.Info" Size="@Size.Small">Info</TailsPill>
+        <TailsPill Color="@Colors.Warning" Size="@Size.Small">Warning</TailsPill>
+        <TailsPill Color="@Colors.Error" Size="@Size.Small">Danger</TailsPill>
+    </TailsStack>
+
+    <TailsStack Orientation="Orientation.Horizontal" Spacing="5">
+        <TailsPill Variation="Variation.Outlined" Color="@Colors.Primary" Size="@Size.Small">Primary</TailsPill>
+        <TailsPill Variation="Variation.Outlined" Color="@Colors.Success" Size="@Size.Small">Success</TailsPill>
+        <TailsPill Variation="Variation.Outlined" Color="@Colors.Info" Size="@Size.Small">Info</TailsPill>
+        <TailsPill Variation="Variation.Outlined" Color="@Colors.Warning" Size="@Size.Small">Warning</TailsPill>
+        <TailsPill Variation="Variation.Outlined" Color="@Colors.Error" Size="@Size.Small">Danger</TailsPill>
+    </TailsStack>
+
+    <TailsStack Orientation="Orientation.Horizontal" Spacing="5">
+        <TailsPill Variation="Variation.Text" Color="@Colors.Primary" Size="@Size.Small">Primary</TailsPill>
+        <TailsPill Variation="Variation.Text" Color="@Colors.Success" Size="@Size.Small">Success</TailsPill>
+        <TailsPill Variation="Variation.Text" Color="@Colors.Info" Size="@Size.Small">Info</TailsPill>
+        <TailsPill Variation="Variation.Text" Color="@Colors.Warning" Size="@Size.Small">Warning</TailsPill>
+        <TailsPill Variation="Variation.Text" Color="@Colors.Error" Size="@Size.Small">Danger</TailsPill>
+    </TailsStack>
+
+    <h1>Tails Buttons</h1>
+
+    <TailsStack Orientation="Orientation.Horizontal" Spacing="5">
+        <TailsButton Color="@Colors.Primary" Style="width: 100px">Primary</TailsButton>
+        <TailsButton Color="@Colors.Secondary" Style="width: 100px">Secondary</TailsButton>
+        <TailsButton Color="@Colors.Success" Style="width: 100px">Success</TailsButton>
+        <TailsButton Color="@Colors.Info" Style="width: 100px">Info</TailsButton>
+        <TailsButton Color="@Colors.Warning" Style="width: 100px">Warning</TailsButton>
+        <TailsButton Color="@Colors.Error" Style="width: 100px">Error</TailsButton>
+    </TailsStack>
+
+    <TailsStack Orientation="Orientation.Horizontal" Spacing="5">
+        <TailsButton Variation="Variation.Outlined" Color="@Colors.Primary" Style="width: 100px">Primary</TailsButton>
+        <TailsButton Variation="Variation.Outlined" Color="@Colors.Secondary" Style="width: 100px">Secondary
+        </TailsButton>
+        <TailsButton Variation="Variation.Outlined" Color="@Colors.Success" Style="width: 100px">Success</TailsButton>
+        <TailsButton Variation="Variation.Outlined" Color="@Colors.Info" Style="width: 100px">Info</TailsButton>
+        <TailsButton Variation="Variation.Outlined" Color="@Colors.Warning" Style="width: 100px">Warning</TailsButton>
+        <TailsButton Variation="Variation.Outlined" Color="@Colors.Error" Style="width: 100px">Error</TailsButton>
+    </TailsStack>
+
+    <TailsStack Orientation="Orientation.Horizontal" Spacing="5">
+        <TailsButton Variation="Variation.Text" Color="@Colors.Primary" Style="width: 100px">Primary</TailsButton>
+        <TailsButton Variation="Variation.Text" Color="@Colors.Secondary" Style="width: 100px">Secondary</TailsButton>
+        <TailsButton Variation="Variation.Text" Color="@Colors.Success" Style="width: 100px">Success</TailsButton>
+        <TailsButton Variation="Variation.Text" Color="@Colors.Info" Style="width: 100px">Info</TailsButton>
+        <TailsButton Variation="Variation.Text" Color="@Colors.Warning" Style="width: 100px">Warning</TailsButton>
+        <TailsButton Variation="Variation.Text" Color="@Colors.Error" Style="width: 100px">Error</TailsButton>
+    </TailsStack>
+
+    <h1>Tails Inputs</h1>
+    <EditForm Model="_model" OnValidSubmit="HandleValidSubmit" style="width: 100%">
+        <DataAnnotationsValidator />
+        <TailsStack Width="100" Spacing="5">
+            <TailsInputField T="string" Variation="Variation.Outlined" @bind-Value="@_model.UserName"
+                Placeholder="Example: JohnDoe" For="@(() => _model.UserName)" FieldType="FieldType.Text"
+                Immediate="true" />
+
+            <TailsInputField T="string" Variation="Variation.Outlined" @bind-Value="@_model.Email"
+                Placeholder="Example: johndoe@mail.com" For="@(() => _model.Email)" FieldType="FieldType.Email" />
+
+            <TailsInputField T="string" Variation="Variation.Outlined" @bind-Value="@_model.Password"
+                Placeholder="Example: 12345" For="@(() => _model.Password)" FieldType="FieldType.Password" />
+
+            <TailsButton Color="@Colors.Primary" ButtonType="ButtonType.Submit">Submit
+            </TailsButton>
+        </TailsStack>
+    </EditForm>
+
+
+    <h1>Tails Card</h1>
+    <TailsCard Shadow="Shadow.ExtraLarge">
         <CardHeader>
-            <h1>This is a default card.</h1>
+            <h2>Card title</h2>
         </CardHeader>
-
         <CardBody>
-            <h2 class="border-primary">This is the body content of the card.</h2>
+            <p>Card body text goes here</p>
         </CardBody>
-
         <CardFooter>
-            <TailsButton Color="@Colors.Primary" Variation="Variation.Outlined">Action</TailsButton>
+            <TailsButton Color="@Colors.Primary">Card action</TailsButton>
         </CardFooter>
     </TailsCard>
-    
-    <TailsAlert  Variation="Variation.Solid" Color="@Colors.Success" >
-        User created successfully!
-    </TailsAlert>
-    
-    <TailsPill Variation="Variation.Solid" Color="@Colors.Info" Size="Size.ExtraSmall">
-        Hey,,,, This is a message
-    </TailsPill>
 </TailsStack>
+
+
+@code {
+    private UserModel _model = new UserModel();
+
+    private void HandleValidSubmit()
+    {
+        Console.WriteLine("Form submitted");
+    }
+
+    class UserModel
+    {
+        [Required(ErrorMessage = "The user name is required")]
+        public string UserName { get; set; }
+        [Required(ErrorMessage = "The email is required")]
+        public string Email { get; set; }
+        [Required(ErrorMessage = "The password is required")]
+        public string Password { get; set; }
+    }
+}

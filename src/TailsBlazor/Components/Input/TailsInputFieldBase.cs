@@ -13,6 +13,7 @@ public class TailsInputFieldBase<T> : TailsComponentBase
     protected FieldIdentifier FieldIdentifier;
     protected bool IsInvalid => EditContext?.GetValidationMessages(FieldIdentifier).Any() ?? false;
     protected string Classes => new ClassBuilder()
+        .AddClass(Class)
         .AddClass(GetFieldClass())
         .AddClass(GlobalConstantClassNames.InputFieldInvalid, IsInvalid)
         .Build();

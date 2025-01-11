@@ -15,7 +15,7 @@ internal static class EnumExtensions
             Colors.Secondary => "secondary",
             Colors.Tertiary => "tertiary",
             Colors.Success => "success",
-            Colors.Error => "danger",
+            Colors.Error => "error",
             Colors.Warning => "warning",
             Colors.Info => "info",
             Colors.Neutral => "neutral",
